@@ -1,0 +1,56 @@
+<!--pages/home/home.wxml-->
+
+<swiper style="width:200rpx ,height:900rpx" class="contaner" indicator-dots>
+  <block wx:for="{{dormList}}" wx:for-index="dormIndex" wx:for-item="swiperItem" wx:key="dormIndex">
+    <swiper-item class="" item-id="">
+      <block wx:for="{{swiperItem}}" wx:for-index="NumIndex" wx:for-item="NumList" wx:key="NumIndex">
+        <view class="" hover-class="none" hover-stop-propagation="false">
+          <image class="" src="{{NumList.image}}" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
+          <text class="" selectable="false" space="false" decode="false">
+            {{NumList.id}}
+          </text>
+        </view>
+      </block>
+    </swiper-item>
+  </block>
+</swiper>
+
+<view class="container-white">
+  <view>
+    <!-- class="page__bd" -->
+    <view class="weui-grids">
+      <view>
+        <navigator url="/pages/checkin/checkin" class="weui-grid" hover-class="weui-grid_active">
+          <image class="weui-grid__icon" src="/assets/image/setting.png" />
+          <view class="weui-grid__label">来访登记</view>
+        </navigator>
+      </view>
+      <view>
+        <navigator url="/pages/symptom/symptom" class="weui-grid" hover-class="weui-grid_active">
+          <image class="weui-grid__icon" src="/assets/image/setting.png" />
+          <view class="weui-grid__label">症狀上报</view>
+        </navigator>
+      </view>
+
+      <view>
+        <navigator url="/pages/trends/trends" class="weui-grid" hover-class="weui-grid_active">
+          <image class="weui-grid__icon" src="/assets/image/setting.png" />
+          <view class="weui-grid__label">社区动态</view>
+        </navigator>
+      </view>
+      <view>
+        <navigator url="/pages/report/report" class="weui-grid" hover-class="weui-grid_active">
+          <image class="weui-grid__icon" src="/assets/image/setting.png" />
+          <view class="weui-grid__label">疫情上报</view>
+        </navigator>
+      </view>
+
+      <view>
+        <navigator url="/pages/certificates/certificates" class="weui-grid" hover-class="weui-grid_active">
+          <image class="weui-grid__icon" src="/assets/image/setting.png" />
+          <view class="weui-grid__label">出入凭证</view>
+        </navigator>
+      </view>
+    </view>
+  </view>
+</view>
