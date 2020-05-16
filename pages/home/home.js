@@ -26,6 +26,12 @@ Page({
       }
       ],
     ],
+    shows :[
+      [{
+        id: 1,
+        image: "https://www.easyicon.net/api/resizeApi.php?id=1221973&size=64"
+      }]
+    ]
   },
 
 

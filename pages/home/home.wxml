@@ -15,10 +15,11 @@
   </block>
 </swiper>
 
-<view class="container-white">
-  <view>
-    <!-- class="page__bd" -->
-    <view class="weui-grids">
+<view class="container">
+
+  <view class="view-radius">
+
+    <view>
       <view>
         <navigator url="/pages/checkin/checkin" class="weui-grid" hover-class="weui-grid_active">
           <image class="weui-grid__icon" src="/assets/image/setting.png" />
@@ -53,4 +54,9 @@
       </view>
     </view>
   </view>
+
+  <view wx:for = "{{shows}}" wx:for-item = "item">
+    <image src="item.image"></image>
+  </view>
+
 </view>

@@ -2,13 +2,22 @@
 
 .container {
   padding: 10rpx;
-  display: flex;
-
+  /* display: flex; */
+  width: 100%;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
   background: #eee;
 }
+
+.container-white {
+  margin: 20rpx;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background: #eee;
+}
+
 .container-white {
   padding: 20rpx;
   margin-left: 20rpx;
@@ -17,6 +26,13 @@
   justify-content: space-around;
   align-items: center;
   background: #fff;
+}
+
+.view-radius {
+  background: white;
+  margin: 20rpx;
+  width: 95%;
+  border-radius: 5px;
 }
 
 .weui-cell {
@@ -29,20 +45,21 @@
   -webkit-align-items: center;
   align-items: center;
 }
+
 .weui-grid {
   position: relative;
   float: left;
   padding: 5px 5px;
   width: 20%;
   box-sizing: border-box;
-  /* border-right: 1rpx solid rgba(0, 0, 0, 0.1); */
-  /* border-bottom: 1rpx solid rgba(0, 0, 0, 0.1); */
+  /* border-right: 1rpx solid rgba(0, 0, 0, 0.1); *//* border-bottom: 1rpx solid rgba(0, 0, 0, 0.1); */
 }
+
 .weui-grids {
-  /* border-top: 1rpx solid rgba(0, 0, 0, 0.1); */
-  /* border-left: 1rpx solid rgba(0, 0, 0, 0.1); */
+  /* border-top: 1rpx solid rgba(0, 0, 0, 0.1); *//* border-left: 1rpx solid rgba(0, 0, 0, 0.1); */
   overflow: hidden;
 }
+
 .weui-grid_active {
   background-color: #ececec;
 }
@@ -65,8 +82,6 @@
   overflow: hidden;
 }
 
-
-
 .weui-cells {
   position: relative;
   margin-top: 8px;
@@ -74,8 +89,15 @@
   line-height: 1.41176471;
   font-size: 17px;
 }
+
 .weui-cell__bd {
   -webkit-box-flex: 1;
   -webkit-flex: 1;
   flex: 1;
+}
+
+.show_list {
+  margin-left: 40rpx;
+  margin-top: 10rpx;
+  height: calc(100vh - 80rpx);
 }
