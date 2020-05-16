@@ -54,7 +54,22 @@
   box-sizing: border-box;
   /* border-right: 1rpx solid rgba(0, 0, 0, 0.1); *//* border-bottom: 1rpx solid rgba(0, 0, 0, 0.1); */
 }
-
+.weui-grid3 {
+  position: relative;
+  float: left;
+  padding: 5px 5px;
+  width: 33.3%;
+  box-sizing: border-box;
+  /* border-right: 1rpx solid rgba(0, 0, 0, 0.1); *//* border-bottom: 1rpx solid rgba(0, 0, 0, 0.1); */
+}
+.weui-grid4 {
+  position: relative;
+  float: left;
+  padding: 5px 5px;
+  width: 25%;
+  box-sizing: border-box;
+  /* border-right: 1rpx solid rgba(0, 0, 0, 0.1); *//* border-bottom: 1rpx solid rgba(0, 0, 0, 0.1); */
+}
 .weui-grids {
   /* border-top: 1rpx solid rgba(0, 0, 0, 0.1); *//* border-left: 1rpx solid rgba(0, 0, 0, 0.1); */
   overflow: hidden;

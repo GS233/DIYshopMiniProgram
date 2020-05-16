@@ -23,40 +23,101 @@
       <view>
         <navigator url="/pages/checkin/checkin" class="weui-grid" hover-class="weui-grid_active">
           <image class="weui-grid__icon" src="/assets/image/setting.png" />
-          <view class="weui-grid__label">来访登记</view>
+          <view class="weui-grid__label">{{class1}}</view>
         </navigator>
       </view>
       <view>
         <navigator url="/pages/symptom/symptom" class="weui-grid" hover-class="weui-grid_active">
           <image class="weui-grid__icon" src="/assets/image/setting.png" />
-          <view class="weui-grid__label">症狀上报</view>
+          <view class="weui-grid__label">{{class2}}</view>
         </navigator>
       </view>
 
       <view>
         <navigator url="/pages/trends/trends" class="weui-grid" hover-class="weui-grid_active">
           <image class="weui-grid__icon" src="/assets/image/setting.png" />
-          <view class="weui-grid__label">社区动态</view>
+          <view class="weui-grid__label">{{class3}}</view>
         </navigator>
       </view>
       <view>
         <navigator url="/pages/report/report" class="weui-grid" hover-class="weui-grid_active">
           <image class="weui-grid__icon" src="/assets/image/setting.png" />
-          <view class="weui-grid__label">疫情上报</view>
+          <view class="weui-grid__label">{{class4}}</view>
         </navigator>
       </view>
 
       <view>
         <navigator url="/pages/certificates/certificates" class="weui-grid" hover-class="weui-grid_active">
           <image class="weui-grid__icon" src="/assets/image/setting.png" />
-          <view class="weui-grid__label">出入凭证</view>
+          <view class="weui-grid__label">{{class5}}</view>
         </navigator>
       </view>
     </view>
   </view>
 
-  <view wx:for = "{{shows}}" wx:for-item = "item">
+
+  <view class="view-radius">
+
+    <view>
+      <view>
+        <navigator url="/pages/checkin/checkin" class="weui-grid4" hover-class="weui-grid_active">
+          <image class="weui-grid__icon" src="/assets/image/setting.png" />
+          <view class="weui-grid__label">{{class1}}</view>
+        </navigator>
+      </view>
+      <view>
+        <navigator url="/pages/symptom/symptom" class="weui-grid4" hover-class="weui-grid_active">
+          <image class="weui-grid__icon" src="/assets/image/setting.png" />
+          <view class="weui-grid__label">{{class2}}</view>
+        </navigator>
+      </view>
+
+      <view>
+        <navigator url="/pages/trends/trends" class="weui-grid4" hover-class="weui-grid_active">
+          <image class="weui-grid__icon" src="/assets/image/setting.png" />
+          <view class="weui-grid__label">{{class3}}</view>
+        </navigator>
+      </view>
+            <view>
+        <navigator url="/pages/trends/trends" class="weui-grid4" hover-class="weui-grid_active">
+          <image class="weui-grid__icon" src="/assets/image/setting.png" />
+          <view class="weui-grid__label">{{class3}}</view>
+        </navigator>
+      </view>
+    </view>
+  </view>
+
+
+
+  <!-- 一行三个 -->
+  <view class="view-radius">
+
+    <view>
+      <view>
+        <navigator url="/pages/checkin/checkin" class="weui-grid3" hover-class="weui-grid_active">
+          <image class="weui-grid__icon" src="/assets/image/setting.png" />
+          <view class="weui-grid__label">{{class1}}</view>
+        </navigator>
+      </view>
+      <view>
+        <navigator url="/pages/symptom/symptom" class="weui-grid3" hover-class="weui-grid_active">
+          <image class="weui-grid__icon" src="/assets/image/setting.png" />
+          <view class="weui-grid__label">{{class2}}</view>
+        </navigator>
+      </view>
+
+      <view>
+        <navigator url="/pages/trends/trends" class="weui-grid3" hover-class="weui-grid_active">
+          <image class="weui-grid__icon" src="/assets/image/setting.png" />
+          <view class="weui-grid__label">{{class3}}</view>
+        </navigator>
+      </view>
+    </view>
+  </view>
+
+  <view wx:for="{{shows}}" wx:for-item="item">
     <image src="item.image"></image>
   </view>
+
 
 </view>
