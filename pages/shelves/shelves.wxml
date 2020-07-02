@@ -1,14 +1,28 @@
 <!--pages/shelves/shelves.wxml-->
-<view class="page">
-  <view class="flex_row">
-    <view class="nav_left" >
-      <view style="height:1500rpx;">左侧分类</view>
-    </view> 
-    <view class="nav_right">
-      <view class="nav_right_top">右侧顶部分类</view>
-      <scroll-view class="nav_right_list" scroll-y="true">
-        <view style="height:1200rpx;">右侧列表</view>
-      </scroll-view>
+
+<view class="container">
+  <scroll-view class='nav_left' scroll-y='true'>
+    <block wx:for="{{cateItems}}" wx:key="{{index}}">
+      <view class="nav_left_items {{curNav==item.cate_id?'active':''}}" bindtap="switchRightTab" data-index='{{index}}' data-id="{{item.cate_id}}">{{item.cate_name}}</view>
+    </block>
+  </scroll-view>
+  <scroll-view class="nav_right" scroll-y="true">
+    <!--如果有数据，才遍历项-->
+    <view wx:if="{{cateItems[curIndex].children.length>0}}">
+      <block wx:for="{{cateItems[curIndex].children}}" wx:key="{{index}}">
+        <view class="nav_right_items">
+          <!--界面跳转 -->
+          <navigator url="../../detail/detail">
+            <image src="{{item.image}}"></image>
+            <text>{{item.name}}</text>
+          </navigator>
+        </view>
+      </block>
     </view>
-  </view>
+    <!--如果无数据，则显示数据-->
+    <view class="nocate" wx:else>
+      <image src="../../images/without.png"></image>
+      <text>该分类暂无数据</text>
+    </view>
+  </scroll-view>
 </view>
