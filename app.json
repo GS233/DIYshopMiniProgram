@@ -1,9 +1,24 @@
 {
   "pages": [
+    "pages/cake-shop/cake-shop",
+    "pages/orderForm_shop/orderForm_shop",
+    "pages/accounts_shop/accounts_shop",
+    "pages/pickAtShop_shop/pickAtShop_shop",
+
+    "pages/DIY_shop/DIY_shop",
+    "pages/homeInfo_shop/homeInfo_shop",
+    "pages/discount_shop/discount_shop",
+    "pages/goods_shop/goods_shop",
+
+    "pages/mine_shop/mine_shop",
+    
+    "pages/connectUs/connectUs",
+
     "pages/home/home",
     "pages/shelves/shelves",
     "pages/mine/mine",
-    "pages/settings/settings"
+    "pages/settings/settings",
+    "pages/goods/goods"
   ],
   "window": {
     "backgroundTextStyle": "light",
