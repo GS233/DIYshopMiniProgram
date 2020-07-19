@@ -16,7 +16,6 @@
 </swiper>
 
 <view class="container">
-
   <view class="view-radius">
 
     <view>
@@ -118,6 +117,8 @@
   <view wx:for="{{shows}}" wx:for-item="item">
     <image src="item.image"></image>
   </view>
+
+
 
 
 </view>
