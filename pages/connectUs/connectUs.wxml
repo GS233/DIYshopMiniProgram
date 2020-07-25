@@ -1,2 +1,8 @@
 <!--pages/connectUs/connectUs.wxml-->
-<text>pages/connectUs/connectUs.wxml</text>
+
+
+<view class="connect">
+  <view>北京市无限奥利给有限公司</view>
+  <text>      </text>
+  <view>Email:609009680@qq.com</view>
+</view>

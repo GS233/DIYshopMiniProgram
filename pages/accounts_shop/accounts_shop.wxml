@@ -1,22 +1,21 @@
 <!--pages/accounts_shop/accounts_shop.wxml-->
 <!-- 账目信息 -->
 
-<!--pages/checkin/checkin.wxml-->
 <view class="container">
   <view class="item-1">
-    <text class="text-1">来访数据</text>
+    <text class="text-1">账单数据</text>
     <view class="div-line"></view>
     <view class="weui-cells weui-cells_after-title">
       <view class="weui-cell">
-        <view class="weui-cell__bd">累计来访人数</view>
-        <view class="weui-cell__ft">{{visitorTotalNum}}</view>
+        <view class="weui-cell__bd">本月营业额</view>
+        <view class="weui-cell__ft">{{XTOTLE}}</view>
       </view>
     </view>
     <view class="div-line"></view>
     <view class="weui-cells weui-cells_after-title">
       <view class="weui-cell">
-        <view class="weui-cell__bd">今日来访人数</view>
-        <view class="weui-cell__ft">{{visitorDailyNum}}</view>
+        <view class="weui-cell__bd">今日营业额</view>
+        <view class="weui-cell__ft">{{xToday}}</view>
         <view class="weui-cells weui-cells_after-title">
         </view>
         <view class="div-line"></view>
@@ -25,13 +24,12 @@
   </view>
   <!-- 之后有列表用wx.for -->
   <view class="item-1">
-    <text class="text-1">来访数据</text> 
+    <text class="text-1">账单数据</text> 
     <view class="weui-cell__ft">{{Time}}</view>
     <view class="div-line"></view>
     <navigator wx:for="{{course_list}}" wx:key="index" 
                url="/pages/checkinInfo/checkinInfo?id={{item.id}}">
-      <view class="weui-cell__b">{{item.name}} {{item.tem}} {{item.number}}
-          {{item.reason}}</view>
+      <view class="weui-cell__b">{{account.goods}} {{account.Totle}} </view>
    
       <view class="div-line"></view>
     </navigator>

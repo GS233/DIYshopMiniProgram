@@ -1,2 +1,41 @@
 <!--pages/pickAtShop_shop/pickAtShop_shop.wxml-->
-<text>pages/pickAtShop_shop/pickAtShop_shop.wxml</text>
+
+<!-- 到店自取 -->
+
+<view class="container">
+  <view class="item-1">
+    <text class="text-1">账单数据</text>
+    <view class="div-line"></view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell">
+        <view class="weui-cell__bd">今日自取数</view>
+        <view class="weui-cell__ft">{{XTOTLE}}</view>
+      </view>
+    </view>
+    <view class="div-line"></view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell">
+        <view class="weui-cell__bd">未完成自取单</view>
+        <view class="weui-cell__ft">{{xUncompleted}}</view>
+        <view class="weui-cells weui-cells_after-title">
+        </view>
+        <view class="div-line"></view>
+      </view>
+    </view>
+  </view>
+  <!-- 之后有列表用wx.for -->
+  <view class="item-1">
+    <text class="text-1">订单数据</text> 
+    <view class="weui-cell__ft">{{Time}}</view>
+    <!-- ↑ 精准到分钟 -->
+    <view class="div-line"></view>
+    <navigator wx:for="{{course_list}}" wx:key="index" 
+               url="/pages/checkinInfo/checkinInfo?id={{item.id}}">
+      <view class="weui-cell__b">{{selfPickAccount.number}} {{selfPickAccount.timeLimit}} </view>
+   
+      <view class="div-line"></view>
+    </navigator>
+  </view>
+<button bindtap="getData">刷新</button>
+<!-- ↑需要自动刷新 -->
+</view>

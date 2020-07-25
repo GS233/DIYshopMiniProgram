@@ -1,1 +1,13 @@
 /* pages/connectUs/connectUs.wxss */
+.connect{
+  padding: 0rpx;
+  /* width: 100vh; */
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content:center; 
+  /* 聚集方式 */
+  align-items: center;
+  /* 部署位置 */
+  background: #eee;
+}
