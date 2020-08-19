@@ -1,5 +1,7 @@
 {
   "pages": [
+    "pages/home/home",
+    
     "pages/cake-shop/cake-shop",
     "pages/orderForm_shop/orderForm_shop",
     "pages/accounts_shop/accounts_shop",
@@ -14,7 +16,6 @@
     
     "pages/connectUs/connectUs",
 
-    "pages/home/home",
     "pages/shelves/shelves",
     "pages/mine/mine",
     "pages/settings/settings",

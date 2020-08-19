@@ -1,25 +1,12 @@
-<!--pages/mine/mine.wxml-->
-<view class="mine_head">
-  <view class="userinfo_avatar">
-    <open-data type="userAvatarUrl"></open-data>
+<!-- 个人信息 -->
+<view class="user_info_warp">
+  <view class="user_img_wrap">
+    <view class="userinfo_avatar">
+      <open-data type="userAvatarUrl"></open-data>
+    </view>
+    <view class="user_info">
+      <open-data type="userAvatarUrl"></open-data>
+      <view class="user_name"></view>
+    </view>
   </view>
-
-  <view class="userinfo_name">
-    <open-data type="userNickName" lang="zh_CN"></open-data>
-    <text style="  display: inline-block;"> ，您好!</text>
-  </view>
-  <view class="div_line_5"></view>
-</view>
-<view class="mine_body">
-    <view class="div_line"></view>
-  <view class="body_view">
-    
-    <text class="body_view_text">\n设置</text>
-  </view>
-    <view class="div_line"></view>
-  <view class="body_view">
-    <text class="body_view_text">\n功能x</text>
-  </view>
-    <view class="div_line"></view>
-
 </view>

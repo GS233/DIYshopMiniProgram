@@ -12,9 +12,13 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    const{goods_id} = options;
+    this.getGoodsDetail(goods_id);
   },
-
+  async getGoodsDetail(goods_id){
+    const res = await request({url:"/goods/goods",data:{goods_id}});
+    console.log(res);
+  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
