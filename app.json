@@ -16,10 +16,11 @@
     
     "pages/connectUs/connectUs",
 
+    "pages/goods/goods",
     "pages/shelves/shelves",
     "pages/mine/mine",
     "pages/settings/settings",
-    "pages/goods/goods"
+    "pages/cart/cart"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -39,6 +40,12 @@
       {
         "pagePath": "pages/shelves/shelves",
         "text": "货架",
+        "iconPath": "assets/tabbar/mine.png",
+        "selectedIconPath": "assets/tabbar/mine_a.png"
+      },
+      {
+        "pagePath": "pages/cart/cart",
+        "text": "购物车",
         "iconPath": "assets/tabbar/mine.png",
         "selectedIconPath": "assets/tabbar/mine_a.png"
       },
