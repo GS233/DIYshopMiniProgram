@@ -9,6 +9,7 @@
   </view>
   <view wx:else class="user_btn">
     <navigator url="/pages/login/index" >登录</navigator>
+    <!-- 需要新页面 -->
   </view>
 </view>
 <view class="user_content">
