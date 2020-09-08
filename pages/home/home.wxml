@@ -15,110 +15,65 @@
   </block>
 </swiper>
 
+
+  <view class="btn-two-wrap">
+  <navigator url='/pages/features/features'>
+    <button class="btn-two shadow-lg" hover-class="btn-hover" open-type="getUserInfo" bindgetuserinfo="onChallengeWord">
+      <view class="btn-two__text">
+        <text class="btn-two__title">店铺特色</text>
+        <text class="btn-two__desc">Store features</text>
+      </view>
+      <image class="btn-two__icon" src="/assets/image/word-tip.png" />
+    </button>
+  </navigator>
+
+  <navigator url='/pages/history/history'>
+    <button class="btn-two shadow-lg" hover-class="btn-hover" >
+      <view class="btn-two__text">
+        <text class="btn-two__title">店铺历史</text>
+        <text class="btn-two__desc">Store history</text>
+      </view>
+      <image class="btn-two__icon" src="/assets/image/home-book.png" />
+    </button>
+  </navigator>
+  </view>
+
+
 <view class="container">
+  
   <view class="view-radius">
-
-    <view>
-      <view>
-        <navigator url="/pages/checkin/checkin" class="weui-grid" hover-class="weui-grid_active">
-          <image class="weui-grid__icon" src="/assets/image/setting.png" />
-          <view class="weui-grid__label">{{class1}}</view>
-        </navigator>
-      </view>
-      <view>
-        <navigator url="/pages/symptom/symptom" class="weui-grid" hover-class="weui-grid_active">
-          <image class="weui-grid__icon" src="/assets/image/setting.png" />
-          <view class="weui-grid__label">{{class2}}</view>
-        </navigator>
-      </view>
-
-      <view>
-        <navigator url="/pages/trends/trends" class="weui-grid" hover-class="weui-grid_active">
-          <image class="weui-grid__icon" src="/assets/image/setting.png" />
-          <view class="weui-grid__label">{{class3}}</view>
-        </navigator>
-      </view>
-      <view>
-        <navigator url="/pages/report/report" class="weui-grid" hover-class="weui-grid_active">
-          <image class="weui-grid__icon" src="/assets/image/setting.png" />
-          <view class="weui-grid__label">{{class4}}</view>
-        </navigator>
-      </view>
-
-      <view>
-        <navigator url="/pages/certificates/certificates" class="weui-grid" hover-class="weui-grid_active">
-          <image class="weui-grid__icon" src="/assets/image/setting.png" />
-          <view class="weui-grid__label">{{class5}}</view>
-        </navigator>
-      </view>
+   <navigator url="/pages/checkin/checkin" >
+     <button class="btn-oneline shadow-lg" hover-class="btn-hover" bindgetuserinfo="onRandomMatch">
+    <view class="btn-oneline__text">
+    
+      <text class="oneline-text__title">积    分    商    店</text>
+      <text class="oneline-text__desc">Points store</text> 
     </view>
+     </button>
+   </navigator>
   </view>
-
 
   <view class="view-radius">
-
-    <view>
-      <view>
-        <navigator url="/pages/checkin/checkin" class="weui-grid4" hover-class="weui-grid_active">
-          <image class="weui-grid__icon" src="/assets/image/setting.png" />
-          <view class="weui-grid__label">{{class1}}</view>
-        </navigator>
-      </view>
-      <view>
-        <navigator url="/pages/symptom/symptom" class="weui-grid4" hover-class="weui-grid_active">
-          <image class="weui-grid__icon" src="/assets/image/setting.png" />
-          <view class="weui-grid__label">{{class2}}</view>
-        </navigator>
-      </view>
-
-      <view>
-        <navigator url="/pages/trends/trends" class="weui-grid4" hover-class="weui-grid_active">
-          <image class="weui-grid__icon" src="/assets/image/setting.png" />
-          <view class="weui-grid__label">{{class3}}</view>
-        </navigator>
-      </view>
-            <view>
-        <navigator url="/pages/trends/trends" class="weui-grid4" hover-class="weui-grid_active">
-          <image class="weui-grid__icon" src="/assets/image/setting.png" />
-          <view class="weui-grid__label">{{class3}}</view>
-        </navigator>
-      </view>
+   <navigator url="/pages/checkin/checkin" >
+     <button class="btn-oneline shadow-lg" hover-class="btn-hover" bindgetuserinfo="onRandomMatch">
+    <view class="btn-oneline__text">
+     <image class="btn-oneline__tag" src="/assets/image/home-btn-hot.png" />
+      <text class="oneline-text__title">特    价    优    惠</text>
+      <text class="oneline-text__desc">Special Offers</text> 
     </view>
+     </button>
+   </navigator>
   </view>
 
-
-
-  <!-- 一行三个 -->
   <view class="view-radius">
-
-    <view>
-      <view>
-        <navigator url="/pages/checkin/checkin" class="weui-grid3" hover-class="weui-grid_active">
-          <image class="weui-grid__icon" src="/assets/image/setting.png" />
-          <view class="weui-grid__label">{{class1}}</view>
-        </navigator>
-      </view>
-      <view>
-        <navigator url="/pages/symptom/symptom" class="weui-grid3" hover-class="weui-grid_active">
-          <image class="weui-grid__icon" src="/assets/image/setting.png" />
-          <view class="weui-grid__label">{{class2}}</view>
-        </navigator>
-      </view>
-
-      <view>
-        <navigator url="/pages/trends/trends" class="weui-grid3" hover-class="weui-grid_active">
-          <image class="weui-grid__icon" src="/assets/image/setting.png" />
-          <view class="weui-grid__label">{{class3}}</view>
-        </navigator>
-      </view>
+   <navigator url="/pages/checkin/checkin" >
+     <button class="btn-oneline shadow-lg" hover-class="btn-hover" bindgetuserinfo="onRandomMatch">
+    <view class="btn-oneline__text">
+    
+      <text class="oneline-text__title">意    见    反    馈</text>
+      <text class="oneline-text__desc">Suggestions</text> 
     </view>
+     </button>
+   </navigator>
   </view>
-
-  <view wx:for="{{shows}}" wx:for-item="item">
-    <image src="item.image"></image>
-  </view>
-
-
-
-
 </view>

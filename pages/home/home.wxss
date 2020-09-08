@@ -7,7 +7,7 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  background: #eee;
+  background: rgb(238, 238, 238);
 }
 
 .container-white {
@@ -31,8 +31,9 @@
 .view-radius {
   background: white;
   margin: 20rpx;
-  width: 95%;
+  width: 90%;
   border-radius: 5px;
+  height: 175rpx
 }
 
 .weui-cell {
@@ -115,4 +116,115 @@
   margin-left: 40rpx;
   margin-top: 10rpx;
   height: calc(100vh - 80rpx);
+}
+
+
+
+.btns {
+  width: 750rpx;
+  height: 650rpx;
+  display: flex;
+  flex-direction: column;
+  padding-top: 90rpx;
+  box-sizing: border-box;
+  justify-content: space-around;
+}
+
+.btn-oneline {
+  position: relative;
+  display: flex;
+  width: 600rpx !important;
+  height: 175rpx;
+  background: rgb(255, 255, 255);
+  border-radius: 12rpx;
+  padding: 0;
+  align-items: center;
+  border: 0;
+  outline: none;
+}
+
+.btn-oneline__icon {
+  width: 64rpx;
+  height: 64rpx;
+  margin-right: 50rpx;
+}
+
+.btn-oneline__tag {
+  position: absolute;
+  width: 64rpx;
+  height: 33rpx;
+  top: 0;
+  left: 488rpx;
+}
+
+.btn-oneline__text {
+  display: flex;
+  flex-direction: column;
+  margin-left: 60rpx;
+}
+
+.oneline-text__title {
+  font-size: 50rpx;
+  font-weight: 500;
+  color: rgb(15, 15, 15);
+  margin-left: 110rpx
+}
+
+.oneline-text__desc {
+  font-size: 30rpx;
+  font-weight: 500;
+  color: rgb(90, 85, 85);
+  margin-left: 40rpx
+}
+
+.btn-pk > .btn-oneline__tag {
+  height: 36rpx;
+  width: 44rpx;
+  left: 506rpx;
+}
+
+.btn-two-wrap {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 50rpx;
+  background-color:#ececec
+}
+
+.btn-two {
+  position: relative;
+  width: 288rpx!important;
+  height: 180rpx;
+  background:#fff;
+  border-radius: 12rpx;
+  padding: 0;
+  border: 0;
+  outline: none;
+}
+
+.btn-two__text {
+  margin-top: 24rpx;
+  margin-left: 48rpx;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.btn-two__title {
+  font-size: 32rpx;
+  font-weight: 500;
+  color: rgb(15, 15, 15);
+}
+
+.btn-two__desc {
+  font-size: 27rpx;
+  font-weight: 500;
+  color: rgb(90, 85, 85);
+}
+
+.btn-two__icon {
+  width: 69rpx;
+  height: 64rpx;
+  position: absolute;
+  top: 108rpx;
+  left: 189rpx;
 }
