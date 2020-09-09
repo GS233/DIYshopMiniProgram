@@ -57,8 +57,9 @@
 				},
 				{
 					"id": -1,
-					"name": "pages/discount_shop/discount_shop",
-					"pathName": "pages/discount_shop/discount_shop",
+					"name": "pages/goods_shop/goods_shop",
+					"pathName": "pages/goods_shop/goods_shop",
+					"query": "",
 					"scene": null
 				}
 			]

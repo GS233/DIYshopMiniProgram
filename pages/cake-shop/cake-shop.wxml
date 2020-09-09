@@ -65,7 +65,7 @@
             <view class="weui-grid__label">折扣管理</view>
           </navigator>
         </view>
-        <navigator url="/pages/goods_shop/goods_shop" class="weui-grid-undevelop" hover-class="weui-grid_active">
+        <navigator url="/pages/goods_shop/goods_shop" class="weui-grid" hover-class="weui-grid_active">
           <image class="weui-grid__icon" src="/assets/image/疫情上报.png" />
           <view class="weui-grid__label">商品管理</view>
         </navigator>
