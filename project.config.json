@@ -54,6 +54,12 @@
 					"pathName": "pages/cake-shop/cake-shop",
 					"query": "",
 					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/discount_shop/discount_shop",
+					"pathName": "pages/discount_shop/discount_shop",
+					"scene": null
 				}
 			]
 		}

@@ -60,7 +60,7 @@
         </view>
 
         <view>
-          <navigator url="/pages/discount_shop/discount_shop" class="weui-grid-undevelop" hover-class="weui-grid_active">
+          <navigator url="/pages/discount_shop/discount_shop" class="weui-grid" hover-class="weui-grid_active">
             <image class="weui-grid__icon" src="/assets/image/社区动态.png" />
             <view class="weui-grid__label">折扣管理</view>
           </navigator>

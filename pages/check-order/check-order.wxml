@@ -1,7 +1,5 @@
 <!--pages/check-order/check-order.wxml-->
-<!--pages/pickAtShop_shop/pickAtShop_shop.wxml-->
 
-<!-- 到店自取 -->
 
 <view class="container">
   <view class="item-1">

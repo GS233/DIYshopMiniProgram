@@ -1,2 +1,37 @@
 <!--pages/discount_shop/discount_shop.wxml-->
-<text>pages/discount_shop/discount_shop.wxml</text>
+
+
+<view class="container">
+  <view class="item-1">
+    <text class="text-1">方案一</text>
+    <view class="div-line"></view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell">
+        <input class="weui-cell__bd" placeholder="请输入内容" />
+      </view>
+    </view>
+    <button style="float:right" size="mini" bindtap="getData">应用</button>
+  </view>
+  
+    <view class="item-1">
+    <text class="text-1">方案二</text>
+    <view class="div-line"></view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell">
+        <input class="weui-cell__bd" placeholder="请输入内容" />
+      </view>
+    </view>
+    <button style="float:right" size="mini" bindtap="getData">应用</button>
+  </view>
+
+   <view class="item-1">
+    <text class="text-1">方案三</text>
+    <view class="div-line"></view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell">
+        <input class="weui-cell__bd" placeholder="请输入内容" />
+      </view>
+    </view>
+    <button style="float:right" size="mini" bindtap="getData">应用</button>
+  </view>
+</view>
