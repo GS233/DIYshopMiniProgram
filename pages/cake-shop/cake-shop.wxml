@@ -21,14 +21,14 @@
         </view>
 
         <view>
-          <navigator url="/pages/certificates/certificates" class="weui-grid" hover-class="weui-grid_active">
+          <navigator url="/pages/pickAtShop_shop/pickAtShop_shop" class="weui-grid" hover-class="weui-grid_active">
             <image class="weui-grid__icon" src="/assets/image/出入凭证.png" />
             <view class="weui-grid__label">到店自取</view>
           </navigator>
         </view>
 
         <view>
-          <navigator url="/pages/symptom_u/symptom" class="weui-grid-undevelop" hover-class="weui-grid_active">
+          <navigator url="/pages/check-order/check-order" class="weui-grid" hover-class="weui-grid_active">
             <image class="weui-grid__icon" src="/assets/image/疫情上报.png" />
             <view class="weui-grid__label">订单查询</view>
           </navigator>
